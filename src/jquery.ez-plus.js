@@ -555,6 +555,8 @@ if (typeof Object.create !== 'function') {
                     return false;
                 });
             }
+
+            self.options.onComplete();
         },
         destroy: function () {
             var self = this;
